@@ -2,7 +2,7 @@ FROM python:3
 WORKDIR /opt/payment-code
 COPY payment.ini .
 COPY *.py .
-COPY requiremets.txt .
+COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 ENV CART_HOST="cart" \
     CART_PORT="8080" \
